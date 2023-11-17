@@ -10,6 +10,9 @@ function changeTitles() {
 }
 
 
+
+
+
 function changeCallToActions() {
   let buttonMain = document.querySelectorAll("p a")[0]
   buttonMain.textContent = "OK je veux tester !"
@@ -19,6 +22,9 @@ function changeCallToActions() {
   buttonSecondMain.textContent = "Non, gros bouffon"
   buttonSecondMain.setAttribute("href", "https://www.pole-emploi.fr/accueil/")
 }
+
+
+
 
 
 function changeLogoName() {
@@ -39,7 +45,6 @@ function createIMG(imagesArray) {
   return imageArrayElement
 }
 
-
 function populateImages() {
   let img = createIMG(imagesArray)
   let svgElements = document.querySelectorAll("div.col div.card svg.card-img-top")
@@ -48,12 +53,18 @@ function populateImages() {
   })
 }
 
+
+
+
 function deleteLastCards() {
   for(let i = 0; i < 3; i++){
     let allCard = document.querySelectorAll("div.album div.container div.row div.col")
     allCard[allCard.length - 1].remove()
   }
 }
+
+
+
 
 
 function changeCardsText() {
@@ -73,6 +84,9 @@ function changeCardsText() {
 }
 
 
+
+
+
 function changeViewButtons() {
   const viewButtons = document.querySelectorAll('.card .btn-outline-secondary');
 
@@ -90,6 +104,6 @@ changeCallToActions()
 changeLogoName()
 populateImages()
 deleteLastCards()
-changeCardsText();
-changeViewButtons();
+changeCardsText()
+changeViewButtons()
 
